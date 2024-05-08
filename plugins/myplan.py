@@ -25,8 +25,8 @@ async def start(client, message):
         daily_(message.from_user.id, epcho)
         used_limit(message.from_user.id, 0)
     _newus = find_one(message.from_user.id)
-    used = _newus["used_no_limit"]
-    limit = _newus["no_uploadlimit"]
+    used = _newus["used_Unlimited"]
+    limit = _newus["unlimit_uplod"]
     remain = int(limit) - int(used)
     user = _newus["usertype"]
     ends = _newus["prexdate"]
